@@ -1,0 +1,9 @@
+{
+    "name": "coding-in-the-cold/design-patterns",
+    "autoload": {
+        "psr-4": {
+            "CodingInTheCold\\DesignPatterns\\": "src/"
+        }
+    },
+    "require": {}
+}
