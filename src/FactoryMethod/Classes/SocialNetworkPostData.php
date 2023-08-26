@@ -27,15 +27,15 @@ class SocialNetworkPostData
      */
     public function getSelection()
     {
-        return !empty($_POST['social_media_selection']) ? $_POST['social_media_selection'] : false;
+        return $_POST['social_media_selection'] ?? false;
     }
-
+    
     /**
      * Get the value of post_content
      */
     public function getPostContent()
     {
-        return !empty($_POST['post']) ? $_POST['post'] : false;
+        return $_POST['post'] ?? false;
     }
 
 

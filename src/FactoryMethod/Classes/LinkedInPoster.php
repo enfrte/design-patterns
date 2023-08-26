@@ -2,7 +2,6 @@
 
 namespace CodingInTheCold\DesignPatterns\FactoryMethod\Classes;
 
-
 /**
  * This Concrete Creator supports LinkedIn.
  */
