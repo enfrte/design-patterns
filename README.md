@@ -6,9 +6,9 @@ Some examples of design patterns
 
 Cody says...
 
-* The SocialNetworkPostData class is using the factory method pattern to abstract away the concrete social network poster classes (FacebookPoster and LinkedInPoster). This allows the client code to work with any social network poster without being coupled to a specific implementation.
+* The SocialNetworkFormProcessor class is using the factory method pattern to abstract away the concrete social network poster classes (FacebookPoster and LinkedInPoster). This allows the client code to work with any social network poster without being coupled to a specific implementation.
 
-* The factory method (create()) is defined in the SocialNetworkPostData class. This class acts as the creator and determines which concrete product to instantiate based on the user selection.
+* The factory method (create()) is defined in the SocialNetworkFormProcessor class. This class acts as the creator and determines which concrete product to instantiate based on the user selection.
 
 * The client code in index.php uses the factory method to obtain an instance of the appropriate concrete product (FacebookPoster or LinkedInPoster) based on user input.
 

@@ -2,7 +2,7 @@
 
 namespace CodingInTheCold\DesignPatterns\FactoryMethod;
 
-use CodingInTheCold\DesignPatterns\FactoryMethod\Classes\SocialNetworkPostData;
+use CodingInTheCold\DesignPatterns\FactoryMethod\Classes\SocialNetworkFormProcessor;
 use CodingInTheCold\DesignPatterns\FactoryMethod\Classes\FacebookPoster;
 use CodingInTheCold\DesignPatterns\FactoryMethod\Classes\LinkedInPoster;
 
@@ -42,21 +42,7 @@ error_reporting(E_ALL);
     </form>
 
     <?php
-
-    $data = new SocialNetworkPostData();
-
-    if ( $data->getSelection() == SocialNetworkPostData::FACEBOOK ) {
-        /**
-         * During the initialization phase, the app can decide which social network it
-         * wants to work with, create an object of the proper subclass, and pass it to
-         * the client code.
-         */
-        $data->create(new FacebookPoster("john_smith", "abc123"));
-    }
-    else if ( $data->getSelection() == SocialNetworkPostData::LINKEDIN ) {
-        $data->create(new LinkedInPoster("john_smith@example.com", "def456"));
-    }
-
+        $formProcessor = new SocialNetworkFormProcessor();
     ?>
 
 </body>
